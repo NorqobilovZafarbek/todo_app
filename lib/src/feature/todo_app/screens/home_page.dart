@@ -22,6 +22,8 @@ class _HomePageState extends State<HomePage> {
     widget.isDark.value = !widget.isDark.value;
   }
 
+  final ValueNotifier<List<String>> list = ValueNotifier([]);
+
   @override
   Widget build(BuildContext context) {
     return ValueListenableBuilder(
@@ -40,7 +42,9 @@ class _HomePageState extends State<HomePage> {
                     height: 241.h,
                   ),
                   CustomText(value: value, onTap: onTap),
-                  const CustomButton(),
+                  CustomButton(
+                    list: list,
+                  ),
                 ],
               ),
             ),

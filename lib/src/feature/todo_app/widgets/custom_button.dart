@@ -2,8 +2,29 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:todo_app/src/common/constants/app_colors.dart';
 
-class CustomButton extends StatelessWidget {
-  const CustomButton({super.key});
+class CustomButton extends StatefulWidget {
+  final ValueNotifier<List<String>> list;
+
+  CustomButton({super.key, required this.list});
+
+  @override
+  State<CustomButton> createState() => _CustomButtonState();
+}
+
+class _CustomButtonState extends State<CustomButton> {
+  late TextEditingController textController;
+
+  @override
+  void initState() {
+    super.initState();
+    textController = TextEditingController();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    textController.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -38,6 +59,10 @@ class CustomButton extends StatelessWidget {
                         ),
                         IconButton(
                           onPressed: () {
+                            List<String> temp = widget.list.value;
+                            temp.add(textController.text);
+                            widget.list.value = temp.toList();
+                            textController.clear();
                             Navigator.pop(context);
                           },
                           icon: Icon(
@@ -49,12 +74,12 @@ class CustomButton extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const TextField(
+                  TextField(
+                    controller: textController,
                     minLines: 1,
                     maxLines: 4,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       hintText: '',
-                      // border: OutlineInputBorder(),
                     ),
                     autofocus: true,
                   ),
