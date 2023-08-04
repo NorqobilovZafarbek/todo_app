@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class App extends StatefulWidget {
   const App({Key? key}) : super(key: key);
@@ -10,13 +11,22 @@ class App extends StatefulWidget {
 class _App extends State<App> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        useMaterial3: true,
-      ),
-      title: "TODO app",
-      debugShowCheckedModeBanner: false,
-      home: const Scaffold(),
+    return ScreenUtilInit(
+        designSize: const Size(414, 898),
+        minTextAdapt: true,
+        splitScreenMode: true,
+        builder: (context, child) {
+          return MaterialApp(
+            theme: ThemeData(
+              useMaterial3: true,
+            ),
+            title: "TODO app",
+            debugShowCheckedModeBanner: false,
+            home: const Scaffold(),
+          );
+        }
     );
   }
 }
+
+
