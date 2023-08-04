@@ -12,21 +12,19 @@ class _App extends State<App> {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-        designSize: const Size(414, 898),
-        minTextAdapt: true,
-        splitScreenMode: true,
-        builder: (context, child) {
-          return MaterialApp(
-            theme: ThemeData(
-              useMaterial3: true,
-            ),
-            title: "TODO app",
-            debugShowCheckedModeBanner: false,
-            home: const Scaffold(),
-          );
-        }
+      designSize: const Size(414, 898),
+      minTextAdapt: true,
+      splitScreenMode: true,
+      builder: (context, child) {
+        return MaterialApp(
+          theme: ThemeData(
+            useMaterial3: true,
+          ),
+          title: "TODO app",
+          debugShowCheckedModeBanner: false,
+          home: const Scaffold(),
+        );
+      },
     );
   }
 }
-
-
