@@ -19,8 +19,9 @@ class SettingItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 10.h),
+      padding: EdgeInsets.symmetric(vertical: 7.h),
       child: ListTile(
+        tileColor: value ? AppColors.darkTextColor : Colors.white,
         onTap: onTap,
         shape: RoundedRectangleBorder(
           side: BorderSide(
