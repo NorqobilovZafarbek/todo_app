@@ -1,0 +1,12 @@
+
+abstract class AppImages {
+  static String add = "assets/images/add.png";
+  static String calendar = "assets/images/calendar.png";
+  static String chekSquare = "assets/images/check_square.png";
+  static String home = "assets/images/home.png";
+  static String moon = "assets/images/moon.png";
+  static String settings = "assets/images/settings.png";
+  static String square = "assets/images/square.png";
+  static String star = "assets/images/star.png";
+  static String sun = "assets/images/sun.png";
+}
