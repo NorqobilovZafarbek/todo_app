@@ -42,6 +42,7 @@ class SettingItem extends StatelessWidget {
         trailing: Icon(
           value ? CupertinoIcons.moon : CupertinoIcons.sun_max,
           color: value ? AppColors.lightTextColor : AppColors.darkTextColor,
+          size: 28.h,
         ),
       ),
     );

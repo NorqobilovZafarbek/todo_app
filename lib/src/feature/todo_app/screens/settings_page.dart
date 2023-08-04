@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:todo_app/src/common/constants/images.dart';
 
 import '../../../common/constants/app_colors.dart';
 import '../widgets/custom_dialog.dart';
@@ -67,9 +68,9 @@ class _SettingsPageState extends State<SettingsPage> {
                     Padding(
                       padding: EdgeInsets.symmetric(vertical: 25.h),
                       child: SizedBox(
-                        height: 250.h,
-                        child: const FlutterLogo(
-                          size: 200,
+                        height: 300.h,
+                        child: Image(
+                          image: AssetImage(AppImages.settingBG),
                         ),
                       ),
                     ),

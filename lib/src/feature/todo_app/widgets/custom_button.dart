@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:todo_app/src/common/constants/app_colors.dart';
 
+import '../models/todo_item.dart';
+
 class CustomButton extends StatefulWidget {
-  final ValueNotifier<List<String>> list;
+  final ValueNotifier<List<DataTitle>> list;
 
   CustomButton({super.key, required this.list});
 
@@ -59,8 +61,8 @@ class _CustomButtonState extends State<CustomButton> {
                         ),
                         IconButton(
                           onPressed: () {
-                            List<String> temp = widget.list.value;
-                            temp.add(textController.text);
+                            List<DataTitle> temp = widget.list.value;
+                            temp.add(DataTitle(title: textController.text));
                             widget.list.value = temp.toList();
                             textController.clear();
                             Navigator.pop(context);

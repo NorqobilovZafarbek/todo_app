@@ -2,14 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../common/constants/app_colors.dart';
+import '../models/todo_item.dart';
 import '../widgets/custom_button.dart';
 import '../widgets/text_and_theme_button.dart';
 
 class HomePage extends StatefulWidget {
   final ValueNotifier<bool> isDark;
+  final ValueNotifier<List<DataTitle>> todosList;
 
   const HomePage({
     required this.isDark,
+    required this.todosList,
     super.key,
   });
 
@@ -21,8 +24,6 @@ class _HomePageState extends State<HomePage> {
   void onTap() {
     widget.isDark.value = !widget.isDark.value;
   }
-
-  final ValueNotifier<List<String>> list = ValueNotifier([]);
 
   @override
   Widget build(BuildContext context) {
@@ -42,9 +43,7 @@ class _HomePageState extends State<HomePage> {
                     height: 241.h,
                   ),
                   CustomText(value: value, onTap: onTap),
-                  CustomButton(
-                    list: list,
-                  ),
+                  CustomButton(list: widget.todosList),
                 ],
               ),
             ),

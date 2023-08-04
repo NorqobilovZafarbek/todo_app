@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:todo_app/src/common/constants/app_colors.dart';
+import 'package:todo_app/src/common/constants/images.dart';
 
 class CustomDialog extends StatelessWidget {
   const CustomDialog({super.key});
@@ -22,7 +23,7 @@ class CustomDialog extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'Team Name',
+                    'MSZ Group',
                     style: TextStyle(
                       color: AppColors.darkTextColor,
                       fontSize: 18.sp,
@@ -30,7 +31,11 @@ class CustomDialog extends StatelessWidget {
                       fontWeight: FontWeight.w700,
                     ),
                   ),
-                  const FlutterLogo(),
+                  Image(
+                    image: AssetImage(AppImages.groupLogo),
+                    width: 80.w,
+                    height: 28.h,
+                  ),
                 ],
               ),
               Padding(
