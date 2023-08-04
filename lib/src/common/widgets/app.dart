@@ -25,7 +25,12 @@ class _App extends State<App> {
           ),
           title: "TODO app",
           debugShowCheckedModeBanner: false,
-          home: const Scaffold(),
+          home: Scaffold(
+            backgroundColor: AppColors.lightBgColor,
+            body: const Center(
+              child: CustomButton(),
+            ),
+          ),
         );
       },
     );
