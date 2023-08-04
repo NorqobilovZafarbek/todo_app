@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:todo_app/src/common/constants/app_colors.dart';
-import 'package:todo_app/src/feature/todo_app/widgets/custom_button.dart';
 
+import '../../../common/constants/app_colors.dart';
+import '../widgets/custom_button.dart';
 import '../widgets/text_and_theme_button.dart';
 
 class HomePage extends StatefulWidget {
@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
               value ? AppColors.darkBgColor : AppColors.lightBgColor,
           body: SafeArea(
             child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 32.w, vertical: 24),
+              padding: EdgeInsets.symmetric(horizontal: 32.w, vertical: 24.h),
               child: Column(
                 children: [
                   SizedBox(
