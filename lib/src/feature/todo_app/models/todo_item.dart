@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 class DataTitle {
-  final bool? isCompleted;
+  bool? isCompleted;
   String title;
   final DateTime? dateTime;
 
@@ -36,11 +36,11 @@ class DataTitle {
     );
   }
 
-  Map<String , Object?> toMap(){
+  Map<String, Object?> toMap() {
     return {
-      "title" : title,
+      "title": title,
       "isCompleted": isCompleted,
-      "dateTime" : dateTime,
+      "dateTime": dateTime,
     };
   }
 

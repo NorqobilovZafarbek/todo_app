@@ -7,7 +7,7 @@ import '../models/todo_item.dart';
 class CustomButton extends StatefulWidget {
   final ValueNotifier<List<DataTitle>> list;
 
-  CustomButton({super.key, required this.list});
+  const CustomButton({super.key, required this.list});
 
   @override
   State<CustomButton> createState() => _CustomButtonState();
@@ -33,6 +33,8 @@ class _CustomButtonState extends State<CustomButton> {
     return ElevatedButton(
       onPressed: () {
         showModalBottomSheet(
+          isScrollControlled: true,
+          constraints: BoxConstraints(minHeight: 400.h),
           context: context,
           builder: (context) {
             return Padding(
@@ -61,9 +63,12 @@ class _CustomButtonState extends State<CustomButton> {
                         ),
                         IconButton(
                           onPressed: () {
-                            List<DataTitle> temp = widget.list.value;
-                            temp.add(DataTitle(title: textController.text));
-                            widget.list.value = temp.toList();
+                            if (textController.text.isNotEmpty) {
+                              List<DataTitle> temp = widget.list.value;
+                              temp.add(DataTitle(title: textController.text));
+                              widget.list.value = temp.toList();
+                              textController.clear();
+                            }
                             textController.clear();
                             Navigator.pop(context);
                           },

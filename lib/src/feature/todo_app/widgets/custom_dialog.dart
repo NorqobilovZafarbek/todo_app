@@ -13,7 +13,7 @@ class CustomDialog extends StatelessWidget {
       backgroundColor: const Color(0xFFFFFFFF),
       child: SizedBox(
         width: 250.w,
-        height: 250.h,
+        height: 500.h,
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 25.w, vertical: 25.h),
           child: Column(

@@ -18,7 +18,7 @@ class _CustomTextState extends State<CustomText> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 19.h),
+      padding: EdgeInsets.only(bottom: 19.h),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
