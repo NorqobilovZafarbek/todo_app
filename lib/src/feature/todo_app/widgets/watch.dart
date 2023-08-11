@@ -8,8 +8,8 @@ class RPSCustomPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    Paint paint_0_fill = Paint()..style = PaintingStyle.fill;
-    paint_0_fill.color = const Color(0xFF061C36);
+    Paint paint0Fill = Paint()..style = PaintingStyle.fill;
+    paint0Fill.color = const Color(0xFF061C36);
     canvas.drawRRect(
         RRect.fromRectAndCorners(
             Rect.fromLTWH(size.width * 0.1327160, size.height * 0.1203704,
@@ -18,12 +18,12 @@ class RPSCustomPainter extends CustomPainter {
             bottomLeft: Radius.circular(size.width * 0.2283951),
             topLeft: Radius.circular(size.width * 0.2283951),
             topRight: Radius.circular(size.width * 0.2283951)),
-        paint_0_fill);
+        paint0Fill);
 
-    Paint paint_1_stroke = Paint()
+    Paint paint1Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.01234568;
-    paint_1_stroke.color = Colors.white.withOpacity(1.0);
+    paint1Stroke.color = Colors.white.withOpacity(1.0);
     canvas.drawRRect(
         RRect.fromRectAndCorners(
             Rect.fromLTWH(size.width * 0.1388889, size.height * 0.1265432,
@@ -32,10 +32,10 @@ class RPSCustomPainter extends CustomPainter {
             bottomLeft: Radius.circular(size.width * 0.2222222),
             topLeft: Radius.circular(size.width * 0.2222222),
             topRight: Radius.circular(size.width * 0.2222222)),
-        paint_1_stroke);
+        paint1Stroke);
 
-    Paint paint_1_fill = Paint()..style = PaintingStyle.fill;
-    paint_1_fill.color = const Color(0xFF061C36);
+    Paint paint1Fill = Paint()..style = PaintingStyle.fill;
+    paint1Fill.color = const Color(0xFF061C36);
     canvas.drawRRect(
         RRect.fromRectAndCorners(
             Rect.fromLTWH(size.width * 0.1388889, size.height * 0.1265432,
@@ -44,115 +44,91 @@ class RPSCustomPainter extends CustomPainter {
             bottomLeft: Radius.circular(size.width * 0.2222222),
             topLeft: Radius.circular(size.width * 0.2222222),
             topRight: Radius.circular(size.width * 0.2222222)),
-        paint_1_fill);
+        paint1Fill);
 
-    Paint paint_2_stroke = Paint()
+    Paint paint2Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.009259259;
-    paint_2_stroke.color = Colors.white.withOpacity(1.0);
-    canvas.drawLine(
-        Offset(size.width * 0.5046296, size.height * 0.1419753),
-        Offset(size.width * 0.5046296, size.height * 0.1604938),
-        paint_2_stroke);
+    paint2Stroke.color = Colors.white.withOpacity(1.0);
+    canvas.drawLine(Offset(size.width * 0.5046296, size.height * 0.1419753),
+        Offset(size.width * 0.5046296, size.height * 0.1604938), paint2Stroke);
 
-    Paint paint_3_stroke = Paint()
+    Paint paint3Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.009259259;
-    paint_3_stroke.color = Colors.white.withOpacity(1.0);
-    canvas.drawLine(
-        Offset(size.width * 0.6929012, size.height * 0.1512346),
-        Offset(size.width * 0.6929012, size.height * 0.1820988),
-        paint_3_stroke);
+    paint3Stroke.color = Colors.white.withOpacity(1.0);
+    canvas.drawLine(Offset(size.width * 0.6929012, size.height * 0.1512346),
+        Offset(size.width * 0.6929012, size.height * 0.1820988), paint3Stroke);
 
-    Paint paint_4_stroke = Paint()
+    Paint paint4Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.009259259;
-    paint_4_stroke.color = Colors.white.withOpacity(1.0);
-    canvas.drawLine(
-        Offset(size.width * 0.3070988, size.height * 0.1512346),
-        Offset(size.width * 0.3070988, size.height * 0.1820988),
-        paint_4_stroke);
+    paint4Stroke.color = Colors.white.withOpacity(1.0);
+    canvas.drawLine(Offset(size.width * 0.3070988, size.height * 0.1512346),
+        Offset(size.width * 0.3070988, size.height * 0.1820988), paint4Stroke);
 
-    Paint paint_5_stroke = Paint()
+    Paint paint5Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.009259259;
-    paint_5_stroke.color = Colors.white.withOpacity(1.0);
-    canvas.drawLine(
-        Offset(size.width * 0.1636000, size.height * 0.3132716),
-        Offset(size.width * 0.1944639, size.height * 0.3134043),
-        paint_5_stroke);
+    paint5Stroke.color = Colors.white.withOpacity(1.0);
+    canvas.drawLine(Offset(size.width * 0.1636000, size.height * 0.3132716),
+        Offset(size.width * 0.1944639, size.height * 0.3134043), paint5Stroke);
 
-    Paint paint_6_stroke = Paint()
+    Paint paint6Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.009259259;
-    paint_6_stroke.color = Colors.white.withOpacity(1.0);
-    canvas.drawLine(
-        Offset(size.width * 0.8055741, size.height * 0.3132716),
-        Offset(size.width * 0.8364383, size.height * 0.3134043),
-        paint_6_stroke);
+    paint6Stroke.color = Colors.white.withOpacity(1.0);
+    canvas.drawLine(Offset(size.width * 0.8055741, size.height * 0.3132716),
+        Offset(size.width * 0.8364383, size.height * 0.3134043), paint6Stroke);
 
-    Paint paint_7_stroke = Paint()
+    Paint paint7Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.009259259;
-    paint_7_stroke.color = Colors.white.withOpacity(1.0);
-    canvas.drawLine(
-        Offset(size.width * 0.8055741, size.height * 0.6774691),
-        Offset(size.width * 0.8364383, size.height * 0.6776019),
-        paint_7_stroke);
+    paint7Stroke.color = Colors.white.withOpacity(1.0);
+    canvas.drawLine(Offset(size.width * 0.8055741, size.height * 0.6774691),
+        Offset(size.width * 0.8364383, size.height * 0.6776019), paint7Stroke);
 
-    Paint paint_8_stroke = Paint()
+    Paint paint8Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.009259259;
-    paint_8_stroke.color = Colors.white.withOpacity(1.0);
-    canvas.drawLine(
-        Offset(size.width * 0.1636000, size.height * 0.6774691),
-        Offset(size.width * 0.1944639, size.height * 0.6776019),
-        paint_8_stroke);
+    paint8Stroke.color = Colors.white.withOpacity(1.0);
+    canvas.drawLine(Offset(size.width * 0.1636000, size.height * 0.6774691),
+        Offset(size.width * 0.1944639, size.height * 0.6776019), paint8Stroke);
 
-    Paint paint_9_stroke = Paint()
+    Paint paint9Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.009259259;
-    paint_9_stroke.color = Colors.white.withOpacity(1.0);
-    canvas.drawLine(
-        Offset(size.width * 0.3070988, size.height * 0.7901235),
-        Offset(size.width * 0.3070988, size.height * 0.8209877),
-        paint_9_stroke);
+    paint9Stroke.color = Colors.white.withOpacity(1.0);
+    canvas.drawLine(Offset(size.width * 0.3070988, size.height * 0.7901235),
+        Offset(size.width * 0.3070988, size.height * 0.8209877), paint9Stroke);
 
-    Paint paint_10_stroke = Paint()
+    Paint paint10Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.009259259;
-    paint_10_stroke.color = Colors.white.withOpacity(1.0);
-    canvas.drawLine(
-        Offset(size.width * 0.6929012, size.height * 0.7901235),
-        Offset(size.width * 0.6929012, size.height * 0.8209877),
-        paint_10_stroke);
+    paint10Stroke.color = Colors.white.withOpacity(1.0);
+    canvas.drawLine(Offset(size.width * 0.6929012, size.height * 0.7901235),
+        Offset(size.width * 0.6929012, size.height * 0.8209877), paint10Stroke);
 
-    Paint paint_11_stroke = Paint()
+    Paint paint11Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.009259259;
-    paint_11_stroke.color = Colors.white.withOpacity(1.0);
-    canvas.drawLine(
-        Offset(size.width * 0.5046296, size.height * 0.8209877),
-        Offset(size.width * 0.5046296, size.height * 0.8395062),
-        paint_11_stroke);
+    paint11Stroke.color = Colors.white.withOpacity(1.0);
+    canvas.drawLine(Offset(size.width * 0.5046296, size.height * 0.8209877),
+        Offset(size.width * 0.5046296, size.height * 0.8395062), paint11Stroke);
 
-    Paint paint_12_stroke = Paint()
+    Paint paint12Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.009259259;
-    paint_12_stroke.color = Colors.white.withOpacity(1.0);
-    canvas.drawLine(
-        Offset(size.width * 0.8518519, size.height * 0.4706790),
-        Offset(size.width * 0.8364198, size.height * 0.4706790),
-        paint_12_stroke);
+    paint12Stroke.color = Colors.white.withOpacity(1.0);
+    canvas.drawLine(Offset(size.width * 0.8518519, size.height * 0.4706790),
+        Offset(size.width * 0.8364198, size.height * 0.4706790), paint12Stroke);
 
-    Paint paint_13_stroke = Paint()
+    Paint paint13Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.009259259;
-    paint_13_stroke.color = Colors.white.withOpacity(1.0);
-    canvas.drawLine(
-        Offset(size.width * 0.1604938, size.height * 0.4706790),
-        Offset(size.width * 0.1450617, size.height * 0.4706790),
-        paint_13_stroke);
+    paint13Stroke.color = Colors.white.withOpacity(1.0);
+    canvas.drawLine(Offset(size.width * 0.1604938, size.height * 0.4706790),
+        Offset(size.width * 0.1450617, size.height * 0.4706790), paint13Stroke);
 
     Path path_14 = Path();
     path_14.moveTo(size.width * 0.4915617, size.height * 0.1716099);
@@ -307,9 +283,9 @@ class RPSCustomPainter extends CustomPainter {
     path_14.lineTo(size.width * 0.5270062, size.height * 0.2013648);
     path_14.close();
 
-    Paint paint_14_fill = Paint()..style = PaintingStyle.fill;
-    paint_14_fill.color = Colors.white.withOpacity(1.0);
-    canvas.drawPath(path_14, paint_14_fill);
+    Paint paint14Fill = Paint()..style = PaintingStyle.fill;
+    paint14Fill.color = Colors.white.withOpacity(1.0);
+    canvas.drawPath(path_14, paint14Fill);
 
     Path path_15 = Path();
     path_15.moveTo(size.width * 0.5079815, size.height * 0.7700864);
@@ -594,9 +570,9 @@ class RPSCustomPainter extends CustomPainter {
         size.height * 0.7700864);
     path_15.close();
 
-    Paint paint_15_fill = Paint()..style = PaintingStyle.fill;
-    paint_15_fill.color = Colors.white.withOpacity(1.0);
-    canvas.drawPath(path_15, paint_15_fill);
+    Paint paint15Fill = Paint()..style = PaintingStyle.fill;
+    paint15Fill.color = Colors.white.withOpacity(1.0);
+    canvas.drawPath(path_15, paint15Fill);
 
     Path path_16 = Path();
     path_16.moveTo(size.width * 0.8150802, size.height * 0.4640000);
@@ -892,9 +868,9 @@ class RPSCustomPainter extends CustomPainter {
     path_16.lineTo(size.width * 0.8150802, size.height * 0.4692809);
     path_16.close();
 
-    Paint paint_16_fill = Paint()..style = PaintingStyle.fill;
-    paint_16_fill.color = Colors.white.withOpacity(1.0);
-    canvas.drawPath(path_16, paint_16_fill);
+    Paint paint16Fill = Paint()..style = PaintingStyle.fill;
+    paint16Fill.color = Colors.white.withOpacity(1.0);
+    canvas.drawPath(path_16, paint16Fill);
 
     Path path_17 = Path();
     path_17.moveTo(size.width * 0.1739969, size.height * 0.4792870);
@@ -1193,9 +1169,9 @@ class RPSCustomPainter extends CustomPainter {
     path_17.lineTo(size.width * 0.1739969, size.height * 0.4792870);
     path_17.close();
 
-    Paint paint_17_fill = Paint()..style = PaintingStyle.fill;
-    paint_17_fill.color = Colors.white.withOpacity(1.0);
-    canvas.drawPath(path_17, paint_17_fill);
+    Paint paint17Fill = Paint()..style = PaintingStyle.fill;
+    paint17Fill.color = Colors.white.withOpacity(1.0);
+    canvas.drawPath(path_17, paint17Fill);
 
     /// My Code
     Offset center = Offset(size.width / 2 + 2, size.height / 2 - 8);
@@ -1237,25 +1213,61 @@ class RPSCustomPainter extends CustomPainter {
         centerY + radius * 0.40 * sin((dateTime.minute * pi / 30) - pi / 2);
     canvas.drawLine(center, Offset(minHandX, minHandY), minute);
 
-    final hourHandX =
-        centerX + radius * 0.30 * cos((dateTime.hour * pi / 6) - pi / 2);
-    final hourHandY =
-        centerY + radius * 0.30 * sin((dateTime.hour * pi / 6) - pi / 2);
+    final hourHandX = centerX +
+        radius *
+            0.30 *
+            cos(
+              ((dateTime.hour + (dateTime.minute / 60)) * pi / 6) - pi / 2,
+            );
+    final hourHandY = centerY +
+        radius *
+            0.30 *
+            sin(
+              ((dateTime.hour + (dateTime.minute / 60)) * pi / 6) - pi / 2,
+            );
 
-    final moveX =
-        centerX + radius * 0.35 * cos((dateTime.hour * pi / 6) - pi / 2);
-    final moveY =
-        centerY + radius * 0.35 * sin((dateTime.hour * pi / 6) - pi / 2);
+    /// Move
+    final moveX = centerX +
+        radius *
+            0.35 *
+            cos(
+              ((dateTime.hour + (dateTime.minute / 60)) * pi / 6) - pi / 2,
+            );
 
-    final leftX = centerX +
-        radius * 0.28 * cos((dateTime.hour * pi / 6) - pi / 2 - pi / 20);
-    final leftY = centerY +
-        radius * 0.28 * sin((dateTime.hour * pi / 6) - pi / 2 - pi / 20);
+    final moveY = centerY +
+        radius *
+            0.35 *
+            sin(
+              ((dateTime.hour + (dateTime.minute / 60)) * pi / 6) - pi / 2,
+            );
 
+    /// Right
     final rightX = centerX +
-        radius * 0.28 * cos((dateTime.hour * pi / 6) - pi / 2 + pi / 20);
+        radius *
+            0.28 *
+            cos(((dateTime.hour + (dateTime.minute / 60)) * pi / 6) -
+                pi / 2 -
+                pi / 20);
     final rightY = centerY +
-        radius * 0.28 * sin((dateTime.hour * pi / 6) - pi / 2 + pi / 20);
+        radius *
+            0.28 *
+            sin(((dateTime.hour + (dateTime.minute / 60)) * pi / 6) -
+                pi / 2 -
+                pi / 20);
+
+    /// Left
+    final leftX = centerX +
+        radius *
+            0.28 *
+            cos(((dateTime.hour + (dateTime.minute / 60)) * pi / 6) -
+                pi / 2 +
+                pi / 20);
+    final leftY = centerY +
+        radius *
+            0.28 *
+            sin(((dateTime.hour + (dateTime.minute / 60)) * pi / 6) -
+                pi / 2 +
+                pi / 20);
 
     Path triangle = Path()
       ..moveTo(moveX, moveY)

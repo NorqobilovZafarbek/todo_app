@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/src/common/constants/app_colors.dart';
 
-import '../../../common/constants/images.dart';
+import '../../../common/constants/app_images.dart';
 
 class CustomListTile extends StatefulWidget {
   final String title;
@@ -33,6 +33,7 @@ class _CustomListTile extends State<CustomListTile> {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      visualDensity: const VisualDensity(vertical: -2),
       title: Text(
         widget.title,
         style: TextStyle(
@@ -48,7 +49,7 @@ class _CustomListTile extends State<CustomListTile> {
           width: 25,
           height: 25,
           image: widget.isCompleted
-              ? AssetImage(AppImages.chekSquare)
+              ? AssetImage(AppImages.checkSquare)
               : AssetImage(AppImages.square),
         ),
       ),

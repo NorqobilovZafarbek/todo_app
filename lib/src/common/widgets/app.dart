@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../feature/todo_app/screens/page_controller.dart';
-import '../../feature/todo_app/screens/settings_page.dart';
 
 class App extends StatefulWidget {
   const App({Key? key}) : super(key: key);

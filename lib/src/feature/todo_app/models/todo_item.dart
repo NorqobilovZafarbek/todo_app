@@ -32,7 +32,7 @@ class DataTitle {
     return DataTitle(
       title: map["title"] as String,
       isCompleted: map["isCompleted"] as bool,
-      dateTime: map["dateTime"] as DateTime,
+      dateTime: DateTime.parse(map["dateTime"] as String),
     );
   }
 
@@ -40,7 +40,7 @@ class DataTitle {
     return {
       "title": title,
       "isCompleted": isCompleted,
-      "dateTime": dateTime,
+      "dateTime": dateTime.toString(),
     };
   }
 

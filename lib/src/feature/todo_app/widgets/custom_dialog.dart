@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:todo_app/src/common/constants/app_colors.dart';
-import 'package:todo_app/src/common/constants/images.dart';
+
+import '../../../common/constants/app_images.dart';
 
 class CustomDialog extends StatelessWidget {
   const CustomDialog({super.key});

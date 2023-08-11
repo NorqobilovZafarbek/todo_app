@@ -32,6 +32,7 @@ class _CustomButtonState extends State<CustomButton> {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: () {
+        textController.clear();
         showModalBottomSheet(
           isScrollControlled: true,
           constraints: BoxConstraints(minHeight: 400.h),
